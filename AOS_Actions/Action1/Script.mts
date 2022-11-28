@@ -1,4 +1,4 @@
-﻿SystemUtil.Run "chrome.exe", "www.advantageonlineshopping.com"
+﻿SystemUtil.Run "chrome.exe", "http://nimbusserver.aos.com:8000/"
 AIUtil.SetContext Window("regexpwndtitle:=Google Chrome")
 wait 2
 AIUtil("profile", micAnyText, micFromTop, 2).Click
