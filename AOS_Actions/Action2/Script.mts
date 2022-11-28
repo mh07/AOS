@@ -1,4 +1,8 @@
 ﻿AIUtil.SetContext Window("regexpwndtitle:=Google Chrome", "regexpwndclass:=Chrome_WidgetWin_1", "is owned window:=False", "is child window:=False")
+rAudio = AIUtil.FindTextBlock("AUDIO").CheckExists(false)
+If rAudio Then
+Reporter.ReportEvent micFail, "Text Check", "Expected AUDIO"
+End If
 AIUtil.FindTextBlock("POPULAR ITEMS").Click
 AIUtil("right_triangle", micAnyText, micFromRight, 1).Click
 AIUtil("button", "ADD TO CART").Click
