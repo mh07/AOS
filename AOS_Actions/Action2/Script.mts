@@ -16,7 +16,7 @@ xText = AIUtil.FindTextBlock(micAnyText, micWithAnchorBelow, AIUtil.FindTextBloc
 Parameter("OrderNumber")= Right(xText, 10)
 DataTable.GlobalSheet.AddParameter "OrderNumber", Parameter("OrderNumber")
 
-SystemUtil.CloseProcessByName "chrome.exe"
+
 
 
 
